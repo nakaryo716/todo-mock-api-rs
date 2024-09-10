@@ -1,0 +1,9 @@
+services:
+  app:
+    container_name: todo-api
+    build: 
+      dockerfile: Dockerfile
+      context: .
+    ports:
+      - 3000:3000
+    command: cargo run
